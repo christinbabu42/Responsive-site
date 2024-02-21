@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Optionally, hide horizontal scrollbar */
+}
+
+.navbar {
+    height: 70px;
+    background-color: #832266;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.nav-logo{
+    height: 50px;
+    width: 10px;
+}
+
+.logo{
+    background-image: url("https://st3.depositphotos.com/4035913/14155/v/450/depositphotos_141550100-stock-illustration-ae-logo-letter-design-vector.jpg");
+    background-size: cover;
+    height: 30px;
+    width: 100px;
+    margin: 25px 15px;
+    
+}
+.border {
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2.5px solid white;
+}
+
+/** box2 **/
+
+.add-first{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin: 2px ;
+}
+
+.add-sec{
+    font-size: 1rem;
+    margin-left: 4px;
+
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+/** box3 **/
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    margin-bottom: 1%;
+}
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none ;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: rgba(241, 188, 226, 0.945);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+
+.nav-search:hover{
+    border: 2px solid orange;
+}
+/** box4 **/
+
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/** box6 **/
+
+.nav-cart i{
+    font-size: 30px;
+
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/** panel1 **/
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+    
+
+}
+.panel-ops p{
+display: inline;
+margin-left: 10px;
+
+
+
+}
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+    margin: 10px;
+    
+}
+.panel-delas{
+    font-size: 0.9rem;
+    font-weight: 900px;
+    
+}
+
+/** hero-section **/
+
+.hero-section{
+    background-image: url(https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71j8damPo5L._SX3000_.jpg);
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 25px;
+    font-size: 0.85rem;
+   width: 93%;
+   height: 10%;
+   margin-bottom: 30px;
+   
+}
+.hero-msg a{
+    color: rgb(51, 51, 241);
+    
+    
+}
+
+/** footer **/
+.foot-panel1{
+    margin: 0px;
+}
+.foot-panel1{
+    background-color: #37475a;
+    color:white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.footpanel2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+ul{
+    margin-top: 20px;
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin: 10px;
+    color: #dddddd;
+}
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKCAHCxWwutWINsktvMA8P3fCCPOKZuHQgWQ&usqp=CAU");
+    background-size: cover;
+    height: 30px;
+    width: 70px;
+    margin: 25px 15px;
+    
+
+}
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+}
+.pages {
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 25px; 
+    
+}
+.copyright{
+    padding: 0px;   
+}
+
+ 
+
+
+
+/* Media queries for responsiveness */
+
+@media (max-width: 600px) {
+    .logo {
+        width: 10%; /* Adjust the width as needed */
+        height: 50%; /* Maintain aspect ratio */
+    }
+    .nav-cart{
+        width: 0%;
+        height: auto;
+        margin-right: 10%;
+    }
+
+    .navbar {
+        height: 50px;
+        background-color: #832266;
+        color: white;
+        display: inline;
+        align-items: center;
+        justify-content: space-evenly;
+    }    
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1090px) {
+    /* Adjust styles for smaller screens */
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-logo {
+        margin: 10px; /* Adjust the margin as needed */
+    }
+
+    .logo {
+        margin: 10px; /* Adjust the margin as needed */
+    }
+
+    .nav-search {
+        width: 10%;
+    }
+
+    .search-select,
+    .search-input,
+    .search-icon {
+        width: 40%;
+        margin: 5px 0;
+    }
+
+    .shop-select {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+    
+.nav-search {
+    width: 20%;
+
+
+}
+.navbar{
+    width: 100%;
+
+}
+
+.nav-cart{
+    width: 1%;
+}
+
+
+
+/* .nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 62px;
+    height: 40px;
+    border-radius: 4px;
+}
+.search-select {
+    background-color: #f3f3f3;
+    width: 5px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+.search-input{
+    width: 10%;
+    font-size: 1rem;
+    border: none ;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: rgba(241, 188, 226, 0.945);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+} */
+
+
+
+}

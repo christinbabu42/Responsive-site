@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FedX</title>
@@ -236,7 +237,7 @@
   
             <div class="col-lg-8 mt-5 mt-lg-0">
   
-                <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbwQABb8hA_qNkniONQ9uYK-x4YjpBD6WtLzJ7KbB1h18hVyTdoSSHvonSOLkUcYAPctkA/exec">
+                <form id="submit-form" action="https://script.google.com/macros/s/AKfycbwQABb8hA_qNkniONQ9uYK-x4YjpBD6WtLzJ7KbB1h18hVyTdoSSHvonSOLkUcYAPctkA/exec">
               
             <!-- <form onsubmit="sendEmail(); reset(); return false;">
               <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
@@ -276,7 +277,7 @@
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbxGjEzr7bVI1_sPUTkhShdvJDXVp1REIH_c4snzUClKcZFCve6sVfafA9Bct51D5vgxUw/exec",
+                url:"https://script.google.com/macros/s/AKfycbwQABb8hA_qNkniONQ9uYK-x4YjpBD6WtLzJ7KbB1h18hVyTdoSSHvonSOLkUcYAPctkA/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
